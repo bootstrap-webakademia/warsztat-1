@@ -1,0 +1,89 @@
+body {
+  padding: 50px;
+}
+
+.row > div {
+  padding-top:50px;
+  padding-bottom: 50px;
+  background-color: #70AD47;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+.row > div:nth-child(n+2) {
+  background-color: #4472C4;
+}
+
+.row > div:nth-child(n+3) {
+  background-color: #ED7D31;
+}
+
+.row > div:nth-child(n+4) {
+  background-color: pink;
+}
+
+.row:nth-child(even) > div {
+  background-color: #FFE599;
+}
+
+.row:nth-child(even) > div:nth-child(n+2) {
+  background-color: #FF86B2;
+}
+
+.row:nth-child(even) > div:nth-child(n+3) {
+  background-color: red;
+}
+
+.row:nth-child(even) > div:nth-child(n+4) {
+  background-color: yellow;
+}
+
+.row .row > div {
+  background-color: #85200C;
+}
+
+.row .row > div:nth-child(n+2) {
+  background-color: #9900FF;
+}
+
+.row .row > div:nth-child(n+3) {
+  background-color: lightgray;
+}
+
+.row .row > div:nth-child(n+4) {
+  background-color: black;
+}
+
+
+body:after {
+  position: absolute;
+  display: block;
+  content: 'xs';
+  padding: 5px 20px;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  text-align: center;
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 768px){
+  body:after {
+    content: 'sm';
+  }
+}
+
+@media screen and (min-width: 992px){
+  body:after {
+    content: 'md';
+  }
+}
+
+@media screen and (min-width: 1200px){
+  body:after {
+    content: 'lg';
+  }
+}
