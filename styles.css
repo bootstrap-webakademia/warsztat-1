@@ -70,20 +70,26 @@ body:after {
   border: 1px solid black;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 576px){
   body:after {
     content: 'sm';
   }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px){
   body:after {
     content: 'md';
   }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 992px){
   body:after {
     content: 'lg';
+  }
+}
+
+@media screen and (min-width: 1200px){
+  body:after {
+    content: 'xl';
   }
 }
