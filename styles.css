@@ -2,7 +2,7 @@ body {
   padding: 50px;
 }
 
-.row > div {
+.row > div:not(.w-100) {
   padding-top:50px;
   padding-bottom: 50px;
   background-color: #70AD47;
@@ -10,6 +10,7 @@ body {
   text-align: center;
   font-size: 24px;
   color: white;
+  margin-bottom: 10px;
 }
 
 .row > div:nth-child(n+2) {
@@ -21,7 +22,11 @@ body {
 }
 
 .row > div:nth-child(n+4) {
-  background-color: pink;
+  background-color: #AE00F8;
+}
+
+.row > div:nth-child(n+5) {
+  background-color: red;
 }
 
 .row:nth-child(even) > div {
