@@ -99,6 +99,13 @@ body:after {
   }
 }
 
+.d-flex > div {
+  background: #fff;
+  border: 1px solid #000;
+  color: black;
+  padding: 10px;
+}
+
 .container-grid .row {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
